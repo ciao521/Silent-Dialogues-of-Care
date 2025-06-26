@@ -1,0 +1,67 @@
+2025-05-25 03:15:36 | INFO | メインオーケストレータを初期化しました
+2025-05-25 03:15:36 | INFO | マイクハンドラを初期化: デバイスID=0, サンプルレート=44100Hz
+2025-05-25 03:15:36 | ERROR | MediaPipe FaceMeshの初期化に失敗: ValidatedGraphConfig Initialization failed.
+ConstantSidePacketCalculator: ; RET_CHECK failure (mediapipe/calculators/core/constant_side_packet_calculator.cc:64) (cc->OutputSidePackets().NumEntries(kPacketTag))==(options.packet_size())Number of output side packets has to be same as number of packets configured in options.
+ConstantSidePacketCalculator: ; RET_CHECK failure (mediapipe/calculators/core/constant_side_packet_calculator.cc:64) (cc->OutputSidePackets().NumEntries(kPacketTag))==(options.packet_size())Number of output side packets has to be same as number of packets configured in options.
+ImageToTensorCalculator: ; RET_CHECK failure (mediapipe/calculators/tensor/image_to_tensor_calculator.cc:144) ValidateOptionOutputDims(options) returned INTERNAL: ; RET_CHECK failure (./mediapipe/calculators/tensor/image_to_tensor_utils.h:136) options.has_output_tensor_float_range() || options.has_output_tensor_int_range() || options.has_output_tensor_uint_range()Output tensor range is required. 
+SplitTensorVectorCalculator: The number of output streams should match the number of ranges specified in the CalculatorOptions.
+SplitTensorVectorCalculator: The number of output streams should match the number of ranges specified in the CalculatorOptions.
+SplitTensorVectorCalculator: The number of output streams should match the number of ranges specified in the CalculatorOptions.
+2025-05-25 03:15:36 | ERROR | フォールバックMediaPipe FaceMeshの初期化にも失敗: ValidatedGraphConfig Initialization failed.
+ConstantSidePacketCalculator: ; RET_CHECK failure (mediapipe/calculators/core/constant_side_packet_calculator.cc:64) (cc->OutputSidePackets().NumEntries(kPacketTag))==(options.packet_size())Number of output side packets has to be same as number of packets configured in options.
+ConstantSidePacketCalculator: ; RET_CHECK failure (mediapipe/calculators/core/constant_side_packet_calculator.cc:64) (cc->OutputSidePackets().NumEntries(kPacketTag))==(options.packet_size())Number of output side packets has to be same as number of packets configured in options.
+ImageToTensorCalculator: ; RET_CHECK failure (mediapipe/calculators/tensor/image_to_tensor_calculator.cc:144) ValidateOptionOutputDims(options) returned INTERNAL: ; RET_CHECK failure (./mediapipe/calculators/tensor/image_to_tensor_utils.h:136) options.has_output_tensor_float_range() || options.has_output_tensor_int_range() || options.has_output_tensor_uint_range()Output tensor range is required. 
+SplitTensorVectorCalculator: The number of output streams should match the number of ranges specified in the CalculatorOptions.
+SplitTensorVectorCalculator: The number of output streams should match the number of ranges specified in the CalculatorOptions.
+SplitTensorVectorCalculator: The number of output streams should match the number of ranges specified in the CalculatorOptions.
+2025-05-25 03:15:36 | INFO | 顔キャプチャハンドラを初期化: デバイスID=0, 解像度=640x480
+2025-05-25 03:15:36 | INFO | WhisperTranscriberを初期化: モデル=whisper-1, 言語=ja
+2025-05-25 03:15:36 | INFO | HumeEviAnalyzerを初期化しました
+2025-05-25 03:15:36 | WARNING | 感情分類モデルが見つかりません: models/facial_emotion_classifier.onnx
+2025-05-25 03:15:36 | WARNING | デモモードで実行します（ランダムな感情値を返します）
+2025-05-25 03:15:36 | INFO | FacialEmotionRecognizerを初期化しました
+2025-05-25 03:15:36 | INFO | EmotionFusionEngineを初期化しました
+2025-05-25 03:15:36 | INFO | EmpatheticResponseGeneratorを初期化: モデル=gpt-4o
+2025-05-25 03:15:36 | INFO | フロントエンドファイルをマウントしました
+2025-05-25 03:15:36 | INFO | WebSocketサーバーを初期化: 127.0.0.1:8765
+2025-05-25 03:15:36 | INFO | すべてのコンポーネントを初期化しました
+2025-05-25 03:15:36 | INFO | EmotionFusionEngineを初期化しました
+2025-05-25 03:15:36 | INFO | EmotionFusionEngineを初期化しました
+2025-05-25 03:15:36 | INFO | EmotionFusionEngineを初期化しました
+2025-05-25 03:15:36 | INFO | 感情統合完了: 主要感情=awe(信頼度:0.39), 感情価=0.50, 活性度=0.72
+2025-05-25 03:15:36 | INFO | EmotionFusionEngineを初期化しました
+2025-05-25 03:15:36 | INFO | 感情統合完了: 主要感情=doubt(信頼度:0.40), 感情価=-0.34, 活性度=0.12
+2025-05-25 03:15:36 | INFO | EmotionFusionEngineを初期化しました
+2025-05-25 03:15:36 | WARNING | 音声感情データがありません。表情感情のみを使用します
+2025-05-25 03:15:36 | INFO | EmotionFusionEngineを初期化しました
+2025-05-25 03:15:36 | WARNING | 音声感情データがありません。表情感情のみを使用します
+2025-05-25 03:15:36 | INFO | EmotionFusionEngineを初期化しました
+2025-05-25 03:15:36 | WARNING | 表情感情データがありません。音声感情のみを使用します
+2025-05-25 03:15:36 | INFO | EmotionFusionEngineを初期化しました
+2025-05-25 03:15:36 | INFO | EmotionFusionEngineを初期化しました
+2025-05-25 03:15:36 | INFO | WhisperTranscriberを初期化: モデル=whisper-1, 言語=ja
+2025-05-25 03:15:36 | INFO | WhisperTranscriberを初期化: モデル=whisper-1, 言語=ja
+2025-05-25 03:15:36 | INFO | WhisperTranscriberを初期化: モデル=whisper-1, 言語=ja
+2025-05-25 03:15:36 | INFO | WhisperTranscriberを初期化: モデル=whisper-1, 言語=ja
+2025-05-25 03:15:36 | INFO | WhisperTranscriberを初期化: モデル=whisper-1, 言語=ja
+2025-05-25 03:15:36 | INFO | WhisperTranscriberを初期化: モデル=whisper-1, 言語=ja
+2025-05-25 03:15:36 | INFO | WhisperTranscriberを初期化: モデル=whisper-1, 言語=ja
+2025-05-25 03:15:36 | INFO | WhisperTranscriberを初期化: モデル=whisper-1, 言語=ja
+2025-05-25 03:15:36 | ERROR | OpenAI APIキーが設定されていません
+2025-05-25 03:15:36 | INFO | WhisperTranscriberを初期化: モデル=whisper-1, 言語=ja
+2025-05-25 03:15:36 | INFO | WhisperTranscriberを初期化: モデル=whisper-1, 言語=ja
+2025-05-25 03:15:36 | INFO | WhisperTranscriberを初期化: モデル=whisper-1, 言語=ja
+2025-05-25 03:15:36 | INFO | WhisperTranscriberを初期化: モデル=whisper-1, 言語=ja
+2025-05-25 03:15:37 | INFO | WhisperTranscriberを初期化: モデル=whisper-1, 言語=ja
+2025-05-25 03:15:37 | INFO | HumeEviAnalyzerを初期化しました
+2025-05-25 03:15:37 | INFO | HumeEviAnalyzerを初期化しました
+2025-05-25 03:15:37 | INFO | HumeEviAnalyzerを初期化しました
+2025-05-25 03:15:37 | INFO | HumeEviAnalyzerを初期化しました
+2025-05-25 03:15:37 | INFO | HumeEviAnalyzerを初期化しました
+2025-05-25 03:15:37 | INFO | HumeEviAnalyzerを初期化しました
+2025-05-25 03:15:37 | INFO | HumeEviAnalyzerを初期化しました
+2025-05-25 03:15:37 | INFO | HumeEviAnalyzerを初期化しました
+2025-05-25 03:15:37 | INFO | HumeEviAnalyzerを初期化しました
+2025-05-25 03:15:37 | ERROR | Hume AI APIキーが設定されていません
+2025-05-25 03:15:37 | INFO | HumeEviAnalyzerを初期化しました
+2025-05-25 03:15:37 | INFO | HumeEviAnalyzerを初期化しました

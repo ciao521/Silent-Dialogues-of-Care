@@ -1,0 +1,42 @@
+# 基本的なWebフレームワーク
+fastapi==0.111.0
+uvicorn==0.28.0
+
+# WebSocket対応
+websockets==12.0
+
+# OpenAI API
+openai==1.14.0
+
+# 音声処理
+sounddevice==0.4.6
+librosa==0.10.1
+numpy==1.26.4
+scipy==1.12.0
+soundfile==0.12.1
+pygame==2.5.2
+
+# 画像処理と表情分析
+opencv-python==4.9.0.80
+mediapipe==0.10.11
+
+# ONNX推論
+onnxruntime==1.17.0
+
+# Hume AI EVI 2 (感情分析) APIクライアント
+hume==0.4.1
+
+# ユーティリティ
+python-dotenv==1.0.1
+pyyaml==6.0.1
+loguru==0.7.2
+
+# 3Dビジュアル生成 (フロントエンド)
+# フロントエンドではnpmパッケージとして管理されるため、ここには記載しない
+# - three.js
+# - socket.io-client
+
+# テスト
+pytest==7.4.4
+pytest-asyncio==0.23.5
+mock==5.1.0

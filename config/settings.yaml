@@ -1,0 +1,64 @@
+# API認証情報（APIキーをここに直接記載せず、.envファイルから読み込むこと）
+api:
+  openai:
+    key: ${OPENAI_API_KEY}
+  hume:
+    key: ${HUME_API_KEY}
+
+# 入力モジュール設定
+input:
+  audio:
+    device_id: 0  # 使用するマイクデバイスID
+    sample_rate: 44100
+    channels: 1
+    chunk_size: 1024
+  video:
+    device_id: 0  # 使用するカメラデバイスID
+    width: 640
+    height: 480
+    fps: 30
+
+# 分析モジュール設定
+analysis:
+  speech_to_text:
+    model: "whisper-1"  # OpenAI Whisperモデル
+    language: "ja"  # 言語設定（日本語）
+  vocal_emotion:
+    provider: "hume"  # 音声感情分析プロバイダー
+  facial_emotion:
+    use_mediapipe: true
+    model_path: "models/facial_emotion_classifier.onnx"
+  multimodal_fusion:
+    vocal_weight: 0.6  # 音声感情の重み
+    facial_weight: 0.4  # 表情感情の重み
+
+# LLM設定
+llm:
+  model: "gpt-4o"
+  temperature: 0.7
+  max_tokens: 300
+  system_message: "あなたは来場者の感情に寄り添い、共感的な応答を提供するAIアシスタントです。短く、詩的で、深い洞察を含む応答を心がけてください。"
+
+# ビジュアル設定
+visuals:
+  websocket:
+    host: "127.0.0.1"
+    port: 8765
+  renderer:
+    width: 1920
+    height: 1080
+    fullscreen: true
+
+# 出力モジュール設定
+output:
+  audio:
+    enabled: true  # テキスト読み上げを有効化
+    voice: "nova"  # 使用する音声 (OpenAI TTS)
+    speed: 1.0  # 読み上げ速度 (1.0が標準)
+    language: "ja"  # 言語設定（日本語）
+
+# ログ設定
+logging:
+  level: "INFO"
+  save_interactions: true  # インタラクションをログに保存するかどうか
+  anonymize: true  # 個人情報を匿名化するかどうか

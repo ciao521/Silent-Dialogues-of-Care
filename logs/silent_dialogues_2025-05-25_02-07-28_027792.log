@@ -1,0 +1,10 @@
+2025-05-25 02:07:28 | INFO | メインオーケストレータを初期化しました
+2025-05-25 02:07:28 | INFO | マイクハンドラを初期化: デバイスID=0, サンプルレート=44100Hz
+2025-05-25 02:07:28 | ERROR | コンポーネントの初期化中にエラーが発生: ValidatedGraphConfig Initialization failed.
+ConstantSidePacketCalculator: ; RET_CHECK failure (mediapipe/calculators/core/constant_side_packet_calculator.cc:64) (cc->OutputSidePackets().NumEntries(kPacketTag))==(options.packet_size())Number of output side packets has to be same as number of packets configured in options.
+ConstantSidePacketCalculator: ; RET_CHECK failure (mediapipe/calculators/core/constant_side_packet_calculator.cc:64) (cc->OutputSidePackets().NumEntries(kPacketTag))==(options.packet_size())Number of output side packets has to be same as number of packets configured in options.
+ImageToTensorCalculator: ; RET_CHECK failure (mediapipe/calculators/tensor/image_to_tensor_calculator.cc:144) ValidateOptionOutputDims(options) returned INTERNAL: ; RET_CHECK failure (./mediapipe/calculators/tensor/image_to_tensor_utils.h:136) options.has_output_tensor_float_range() || options.has_output_tensor_int_range() || options.has_output_tensor_uint_range()Output tensor range is required. 
+SplitTensorVectorCalculator: The number of output streams should match the number of ranges specified in the CalculatorOptions.
+SplitTensorVectorCalculator: The number of output streams should match the number of ranges specified in the CalculatorOptions.
+SplitTensorVectorCalculator: The number of output streams should match the number of ranges specified in the CalculatorOptions.
+2025-05-25 02:07:28 | ERROR | 初期化に失敗したため、処理を中断します

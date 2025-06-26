@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Silent Dialogues of Care - 境界なき対話</title>
+    <link rel="stylesheet" href="style.css">
+    <script async src="https://unpkg.com/es-module-shims@1.8.0/dist/es-module-shims.js"></script>
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://unpkg.com/three@0.161.0/build/three.module.js",
+          "three/addons/": "https://unpkg.com/three@0.161.0/examples/jsm/",
+          "postprocessing": "https://unpkg.com/postprocessing@6.33.3/build/postprocessing.esm.js"
+        }
+      }
+    </script>
+</head>
+<body>
+    <!-- キャンバス（Three.jsの描画領域） -->
+    <div id="canvas-container"></div>
+    
+    <!-- テキストオーバーレイ -->
+    <div id="text-overlay">
+        <div id="emotion-display">
+            <div id="emotion-label"></div>
+            <div id="emotion-value"></div>
+        </div>
+        <div id="message-container">
+            <div id="user-message"></div>
+            <div id="ai-response"></div>
+        </div>
+    </div>
+    
+    <!-- デバッグUI（開発時のみ表示） -->
+    <div id="debug-panel">
+        <h3>デバッグパネル</h3>
+        <div>
+            <label for="debug-emotion">感情:</label>
+            <select id="debug-emotion">
+                <option value="neutral">中立 (neutral)</option>
+                <option value="happy">幸せ (happy)</option>
+                <option value="sad">悲しみ (sad)</option>
+                <option value="surprise">驚き (surprise)</option>
+                <option value="fear">恐怖 (fear)</option>
+                <option value="anger">怒り (anger)</option>
+                <option value="contempt">軽蔑 (contempt)</option>
+                <option value="disgust">嫌悪 (disgust)</option>
+                <option value="interest">興味 (interest)</option>
+                <option value="amusement">楽しさ (amusement)</option>
+                <option value="awe">畏敬 (awe)</option>
+                <option value="contentment">満足 (contentment)</option>
+                <option value="desire">欲望 (desire)</option>
+            </select>
+        </div>
+        <div>
+            <label for="debug-valence">感情価 (Valence):</label>
+            <input type="range" id="debug-valence" min="-1" max="1" step="0.1" value="0">
+            <span id="debug-valence-value">0.0</span>
+        </div>
+        <div>
+            <label for="debug-activation">活性度 (Activation):</label>
+            <input type="range" id="debug-activation" min="-1" max="1" step="0.1" value="0">
+            <span id="debug-activation-value">0.0</span>
+        </div>
+        <div>
+            <label for="debug-message">メッセージ:</label>
+            <input type="text" id="debug-message" placeholder="テストメッセージを入力...">
+        </div>
+        <div>
+            <label for="debug-response">AI応答:</label>
+            <textarea id="debug-response" placeholder="AIの応答メッセージ..."></textarea>
+        </div>
+        <button id="debug-apply">適用</button>
+        <button id="debug-toggle">デバッグパネル表示/非表示</button>
+        <div id="connection-status">WebSocket: 未接続</div>
+    </div>
+    
+    <!-- Three.jsと関連ライブラリのロード -->
+    <script type="module" src="main.js"></script>
+</body>
+</html>

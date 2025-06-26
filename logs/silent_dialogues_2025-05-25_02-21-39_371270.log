@@ -1,0 +1,289 @@
+2025-05-25 02:21:39 | INFO | メインオーケストレータを初期化しました
+2025-05-25 02:21:39 | INFO | マイクハンドラを初期化: デバイスID=0, サンプルレート=44100Hz
+2025-05-25 02:21:39 | ERROR | MediaPipe FaceMeshの初期化に失敗: ValidatedGraphConfig Initialization failed.
+ConstantSidePacketCalculator: ; RET_CHECK failure (mediapipe/calculators/core/constant_side_packet_calculator.cc:64) (cc->OutputSidePackets().NumEntries(kPacketTag))==(options.packet_size())Number of output side packets has to be same as number of packets configured in options.
+ConstantSidePacketCalculator: ; RET_CHECK failure (mediapipe/calculators/core/constant_side_packet_calculator.cc:64) (cc->OutputSidePackets().NumEntries(kPacketTag))==(options.packet_size())Number of output side packets has to be same as number of packets configured in options.
+ImageToTensorCalculator: ; RET_CHECK failure (mediapipe/calculators/tensor/image_to_tensor_calculator.cc:144) ValidateOptionOutputDims(options) returned INTERNAL: ; RET_CHECK failure (./mediapipe/calculators/tensor/image_to_tensor_utils.h:136) options.has_output_tensor_float_range() || options.has_output_tensor_int_range() || options.has_output_tensor_uint_range()Output tensor range is required. 
+SplitTensorVectorCalculator: The number of output streams should match the number of ranges specified in the CalculatorOptions.
+SplitTensorVectorCalculator: The number of output streams should match the number of ranges specified in the CalculatorOptions.
+SplitTensorVectorCalculator: The number of output streams should match the number of ranges specified in the CalculatorOptions.
+2025-05-25 02:21:39 | ERROR | フォールバックMediaPipe FaceMeshの初期化にも失敗: ValidatedGraphConfig Initialization failed.
+ConstantSidePacketCalculator: ; RET_CHECK failure (mediapipe/calculators/core/constant_side_packet_calculator.cc:64) (cc->OutputSidePackets().NumEntries(kPacketTag))==(options.packet_size())Number of output side packets has to be same as number of packets configured in options.
+ConstantSidePacketCalculator: ; RET_CHECK failure (mediapipe/calculators/core/constant_side_packet_calculator.cc:64) (cc->OutputSidePackets().NumEntries(kPacketTag))==(options.packet_size())Number of output side packets has to be same as number of packets configured in options.
+ImageToTensorCalculator: ; RET_CHECK failure (mediapipe/calculators/tensor/image_to_tensor_calculator.cc:144) ValidateOptionOutputDims(options) returned INTERNAL: ; RET_CHECK failure (./mediapipe/calculators/tensor/image_to_tensor_utils.h:136) options.has_output_tensor_float_range() || options.has_output_tensor_int_range() || options.has_output_tensor_uint_range()Output tensor range is required. 
+SplitTensorVectorCalculator: The number of output streams should match the number of ranges specified in the CalculatorOptions.
+SplitTensorVectorCalculator: The number of output streams should match the number of ranges specified in the CalculatorOptions.
+SplitTensorVectorCalculator: The number of output streams should match the number of ranges specified in the CalculatorOptions.
+2025-05-25 02:21:39 | INFO | 顔キャプチャハンドラを初期化: デバイスID=0, 解像度=640x480
+2025-05-25 02:21:39 | INFO | WhisperTranscriberを初期化: モデル=whisper-1, 言語=ja
+2025-05-25 02:21:39 | INFO | HumeEviAnalyzerを初期化しました
+2025-05-25 02:21:39 | WARNING | 感情分類モデルが見つかりません: models/facial_emotion_classifier.onnx
+2025-05-25 02:21:39 | WARNING | デモモードで実行します（ランダムな感情値を返します）
+2025-05-25 02:21:39 | INFO | FacialEmotionRecognizerを初期化しました
+2025-05-25 02:21:39 | INFO | EmotionFusionEngineを初期化しました
+2025-05-25 02:21:39 | INFO | EmpatheticResponseGeneratorを初期化: モデル=gpt-4o
+2025-05-25 02:21:39 | INFO | フロントエンドファイルをマウントしました
+2025-05-25 02:21:39 | INFO | WebSocketサーバーを初期化: 127.0.0.1:8765
+2025-05-25 02:21:39 | INFO | すべてのコンポーネントを初期化しました
+2025-05-25 02:21:39 | INFO | 録音を開始しました
+2025-05-25 02:21:39 | ERROR | カメラ（デバイスID: 0）を開けませんでした
+2025-05-25 02:21:39 | INFO | 処理ループを開始します
+2025-05-25 02:21:47 | ERROR | 音声感情分析中にエラーが発生: 'HumeBatchClient' object has no attribute 'submit_file'
+2025-05-25 02:21:47 | WARNING | 表情感情データがありません。音声感情のみを使用します
+2025-05-25 02:21:48 | ERROR | 音声感情分析中にエラーが発生: 'HumeBatchClient' object has no attribute 'submit_file'
+2025-05-25 02:21:48 | WARNING | 表情感情データがありません。音声感情のみを使用します
+2025-05-25 02:21:49 | ERROR | 音声感情分析中にエラーが発生: 'HumeBatchClient' object has no attribute 'submit_file'
+2025-05-25 02:21:49 | WARNING | 表情感情データがありません。音声感情のみを使用します
+2025-05-25 02:21:50 | ERROR | 音声感情分析中にエラーが発生: 'HumeBatchClient' object has no attribute 'submit_file'
+2025-05-25 02:21:50 | WARNING | 表情感情データがありません。音声感情のみを使用します
+2025-05-25 02:21:53 | INFO | 文字起こし完了: 'ご視聴ありがとうございました'
+2025-05-25 02:21:53 | INFO | 認識されたテキスト: ご視聴ありがとうございました
+2025-05-25 02:21:53 | ERROR | 音声感情分析中にエラーが発生: 'HumeBatchClient' object has no attribute 'submit_file'
+2025-05-25 02:21:53 | WARNING | 表情感情データがありません。音声感情のみを使用します
+2025-05-25 02:21:54 | INFO | 応答生成完了: '心静かに  
+感謝の言葉が  
+響き渡る...' (トークン: 129+16)
+2025-05-25 02:21:54 | INFO | AI応答: 心静かに  
+感謝の言葉が  
+響き渡る...
+2025-05-25 02:21:56 | ERROR | 音声感情分析中にエラーが発生: 'HumeBatchClient' object has no attribute 'submit_file'
+2025-05-25 02:21:56 | WARNING | 表情感情データがありません。音声感情のみを使用します
+2025-05-25 02:21:57 | ERROR | 音声感情分析中にエラーが発生: 'HumeBatchClient' object has no attribute 'submit_file'
+2025-05-25 02:21:57 | WARNING | 表情感情データがありません。音声感情のみを使用します
+2025-05-25 02:21:58 | ERROR | 音声感情分析中にエラーが発生: 'HumeBatchClient' object has no attribute 'submit_file'
+2025-05-25 02:21:58 | WARNING | 表情感情データがありません。音声感情のみを使用します
+2025-05-25 02:21:59 | ERROR | 音声感情分析中にエラーが発生: 'HumeBatchClient' object has no attribute 'submit_file'
+2025-05-25 02:21:59 | WARNING | 表情感情データがありません。音声感情のみを使用します
+2025-05-25 02:22:04 | INFO | 文字起こし完了: 'ご視聴ありがとうございました'
+2025-05-25 02:22:04 | INFO | 認識されたテキスト: ご視聴ありがとうございました
+2025-05-25 02:22:04 | ERROR | 音声感情分析中にエラーが発生: 'HumeBatchClient' object has no attribute 'submit_file'
+2025-05-25 02:22:04 | WARNING | 表情感情データがありません。音声感情のみを使用します
+2025-05-25 02:22:05 | INFO | 応答生成完了: '時の流れに  
+感謝の波紋が  
+静かに広がる...' (トークン: 217+20)
+2025-05-25 02:22:05 | INFO | AI応答: 時の流れに  
+感謝の波紋が  
+静かに広がる...
+2025-05-25 02:22:07 | ERROR | 音声感情分析中にエラーが発生: 'HumeBatchClient' object has no attribute 'submit_file'
+2025-05-25 02:22:07 | WARNING | 表情感情データがありません。音声感情のみを使用します
+2025-05-25 02:22:08 | ERROR | 音声感情分析中にエラーが発生: 'HumeBatchClient' object has no attribute 'submit_file'
+2025-05-25 02:22:08 | WARNING | 表情感情データがありません。音声感情のみを使用します
+2025-05-25 02:22:09 | ERROR | 音声感情分析中にエラーが発生: 'HumeBatchClient' object has no attribute 'submit_file'
+2025-05-25 02:22:09 | WARNING | 表情感情データがありません。音声感情のみを使用します
+2025-05-25 02:22:10 | ERROR | 音声感情分析中にエラーが発生: 'HumeBatchClient' object has no attribute 'submit_file'
+2025-05-25 02:22:10 | WARNING | 表情感情データがありません。音声感情のみを使用します
+2025-05-25 02:22:13 | INFO | 文字起こし完了: 'ご視聴ありがとうございました'
+2025-05-25 02:22:13 | INFO | 認識されたテキスト: ご視聴ありがとうございました
+2025-05-25 02:22:13 | ERROR | 音声感情分析中にエラーが発生: 'HumeBatchClient' object has no attribute 'submit_file'
+2025-05-25 02:22:13 | WARNING | 表情感情データがありません。音声感情のみを使用します
+2025-05-25 02:22:14 | INFO | 応答生成完了: '音の余韻が  
+静寂の中で  
+そっと息づく...' (トークン: 309+19)
+2025-05-25 02:22:14 | INFO | AI応答: 音の余韻が  
+静寂の中で  
+そっと息づく...
+2025-05-25 02:22:17 | ERROR | 音声感情分析中にエラーが発生: 'HumeBatchClient' object has no attribute 'submit_file'
+2025-05-25 02:22:17 | WARNING | 表情感情データがありません。音声感情のみを使用します
+2025-05-25 02:22:18 | ERROR | 音声感情分析中にエラーが発生: 'HumeBatchClient' object has no attribute 'submit_file'
+2025-05-25 02:22:18 | WARNING | 表情感情データがありません。音声感情のみを使用します
+2025-05-25 02:22:19 | ERROR | 音声感情分析中にエラーが発生: 'HumeBatchClient' object has no attribute 'submit_file'
+2025-05-25 02:22:19 | WARNING | 表情感情データがありません。音声感情のみを使用します
+2025-05-25 02:22:20 | ERROR | 音声感情分析中にエラーが発生: 'HumeBatchClient' object has no attribute 'submit_file'
+2025-05-25 02:22:20 | WARNING | 表情感情データがありません。音声感情のみを使用します
+2025-05-25 02:22:22 | INFO | 文字起こし完了: 'ご視聴ありがとうございました'
+2025-05-25 02:22:22 | INFO | 認識されたテキスト: ご視聴ありがとうございました
+2025-05-25 02:22:22 | ERROR | 音声感情分析中にエラーが発生: 'HumeBatchClient' object has no attribute 'submit_file'
+2025-05-25 02:22:22 | WARNING | 表情感情データがありません。音声感情のみを使用します
+2025-05-25 02:22:23 | INFO | 応答生成完了: '言葉の影が  
+心に優しく  
+溶け込んでゆく...' (トークン: 400+19)
+2025-05-25 02:22:23 | INFO | AI応答: 言葉の影が  
+心に優しく  
+溶け込んでゆく...
+2025-05-25 02:22:25 | ERROR | 音声感情分析中にエラーが発生: 'HumeBatchClient' object has no attribute 'submit_file'
+2025-05-25 02:22:25 | WARNING | 表情感情データがありません。音声感情のみを使用します
+2025-05-25 02:22:26 | ERROR | 音声感情分析中にエラーが発生: 'HumeBatchClient' object has no attribute 'submit_file'
+2025-05-25 02:22:26 | WARNING | 表情感情データがありません。音声感情のみを使用します
+2025-05-25 02:22:27 | ERROR | 音声感情分析中にエラーが発生: 'HumeBatchClient' object has no attribute 'submit_file'
+2025-05-25 02:22:27 | WARNING | 表情感情データがありません。音声感情のみを使用します
+2025-05-25 02:22:28 | ERROR | 音声感情分析中にエラーが発生: 'HumeBatchClient' object has no attribute 'submit_file'
+2025-05-25 02:22:28 | WARNING | 表情感情データがありません。音声感情のみを使用します
+2025-05-25 02:22:30 | INFO | 文字起こし完了: 'ご視聴ありがとうございました'
+2025-05-25 02:22:30 | INFO | 認識されたテキスト: ご視聴ありがとうございました
+2025-05-25 02:22:30 | ERROR | 音声感情分析中にエラーが発生: 'HumeBatchClient' object has no attribute 'submit_file'
+2025-05-25 02:22:30 | WARNING | 表情感情データがありません。音声感情のみを使用します
+2025-05-25 02:22:31 | INFO | 応答生成完了: '感謝の調べ  
+静かに心の  
+奥に響く...' (トークン: 491+16)
+2025-05-25 02:22:31 | INFO | AI応答: 感謝の調べ  
+静かに心の  
+奥に響く...
+2025-05-25 02:22:34 | ERROR | 音声感情分析中にエラーが発生: 'HumeBatchClient' object has no attribute 'submit_file'
+2025-05-25 02:22:34 | WARNING | 表情感情データがありません。音声感情のみを使用します
+2025-05-25 02:22:35 | ERROR | 音声感情分析中にエラーが発生: 'HumeBatchClient' object has no attribute 'submit_file'
+2025-05-25 02:22:35 | WARNING | 表情感情データがありません。音声感情のみを使用します
+2025-05-25 02:22:36 | ERROR | 音声感情分析中にエラーが発生: 'HumeBatchClient' object has no attribute 'submit_file'
+2025-05-25 02:22:36 | WARNING | 表情感情データがありません。音声感情のみを使用します
+2025-05-25 02:22:37 | ERROR | 音声感情分析中にエラーが発生: 'HumeBatchClient' object has no attribute 'submit_file'
+2025-05-25 02:22:37 | WARNING | 表情感情データがありません。音声感情のみを使用します
+2025-05-25 02:22:39 | INFO | 文字起こし完了: 'ご視聴ありがとうございました'
+2025-05-25 02:22:39 | INFO | 認識されたテキスト: ご視聴ありがとうございました
+2025-05-25 02:22:39 | ERROR | 音声感情分析中にエラーが発生: 'HumeBatchClient' object has no attribute 'submit_file'
+2025-05-25 02:22:39 | WARNING | 表情感情データがありません。音声感情のみを使用します
+2025-05-25 02:22:40 | INFO | 応答生成完了: '感謝の言葉が  
+静かな夜に  
+そっと溶けていく...' (トークン: 579+20)
+2025-05-25 02:22:40 | INFO | AI応答: 感謝の言葉が  
+静かな夜に  
+そっと溶けていく...
+2025-05-25 02:22:42 | ERROR | 音声感情分析中にエラーが発生: 'HumeBatchClient' object has no attribute 'submit_file'
+2025-05-25 02:22:42 | WARNING | 表情感情データがありません。音声感情のみを使用します
+2025-05-25 02:22:43 | ERROR | 音声感情分析中にエラーが発生: 'HumeBatchClient' object has no attribute 'submit_file'
+2025-05-25 02:22:43 | WARNING | 表情感情データがありません。音声感情のみを使用します
+2025-05-25 02:22:44 | ERROR | 音声感情分析中にエラーが発生: 'HumeBatchClient' object has no attribute 'submit_file'
+2025-05-25 02:22:44 | WARNING | 表情感情データがありません。音声感情のみを使用します
+2025-05-25 02:22:45 | ERROR | 音声感情分析中にエラーが発生: 'HumeBatchClient' object has no attribute 'submit_file'
+2025-05-25 02:22:45 | WARNING | 表情感情データがありません。音声感情のみを使用します
+2025-05-25 02:22:48 | INFO | 文字起こし完了: 'ご視聴ありがとうございました'
+2025-05-25 02:22:48 | INFO | 認識されたテキスト: ご視聴ありがとうございました
+2025-05-25 02:22:48 | ERROR | 音声感情分析中にエラーが発生: 'HumeBatchClient' object has no attribute 'submit_file'
+2025-05-25 02:22:48 | WARNING | 表情感情データがありません。音声感情のみを使用します
+2025-05-25 02:22:49 | INFO | 応答生成完了: '無音の中で  
+響く感謝の  
+穏やかな調べ...' (トークン: 671+18)
+2025-05-25 02:22:49 | INFO | AI応答: 無音の中で  
+響く感謝の  
+穏やかな調べ...
+2025-05-25 02:22:51 | ERROR | 音声感情分析中にエラーが発生: 'HumeBatchClient' object has no attribute 'submit_file'
+2025-05-25 02:22:51 | WARNING | 表情感情データがありません。音声感情のみを使用します
+2025-05-25 02:22:52 | ERROR | 音声感情分析中にエラーが発生: 'HumeBatchClient' object has no attribute 'submit_file'
+2025-05-25 02:22:52 | WARNING | 表情感情データがありません。音声感情のみを使用します
+2025-05-25 02:22:53 | ERROR | 音声感情分析中にエラーが発生: 'HumeBatchClient' object has no attribute 'submit_file'
+2025-05-25 02:22:53 | WARNING | 表情感情データがありません。音声感情のみを使用します
+2025-05-25 02:22:54 | ERROR | 音声感情分析中にエラーが発生: 'HumeBatchClient' object has no attribute 'submit_file'
+2025-05-25 02:22:54 | WARNING | 表情感情データがありません。音声感情のみを使用します
+2025-05-25 02:23:04 | INFO | 文字起こし完了: 'ご視聴ありがとうございました'
+2025-05-25 02:23:04 | INFO | 認識されたテキスト: ご視聴ありがとうございました
+2025-05-25 02:23:04 | ERROR | 音声感情分析中にエラーが発生: 'HumeBatchClient' object has no attribute 'submit_file'
+2025-05-25 02:23:04 | WARNING | 表情感情データがありません。音声感情のみを使用します
+2025-05-25 02:23:05 | INFO | 応答生成完了: '静寂の中に  
+感謝の光が  
+優しく灯る...' (トークン: 761+17)
+2025-05-25 02:23:05 | INFO | AI応答: 静寂の中に  
+感謝の光が  
+優しく灯る...
+2025-05-25 02:23:08 | ERROR | 音声感情分析中にエラーが発生: 'HumeBatchClient' object has no attribute 'submit_file'
+2025-05-25 02:23:08 | WARNING | 表情感情データがありません。音声感情のみを使用します
+2025-05-25 02:23:09 | ERROR | 音声感情分析中にエラーが発生: 'HumeBatchClient' object has no attribute 'submit_file'
+2025-05-25 02:23:09 | WARNING | 表情感情データがありません。音声感情のみを使用します
+2025-05-25 02:23:10 | ERROR | 音声感情分析中にエラーが発生: 'HumeBatchClient' object has no attribute 'submit_file'
+2025-05-25 02:23:10 | WARNING | 表情感情データがありません。音声感情のみを使用します
+2025-05-25 02:23:11 | ERROR | 音声感情分析中にエラーが発生: 'HumeBatchClient' object has no attribute 'submit_file'
+2025-05-25 02:23:11 | WARNING | 表情感情データがありません。音声感情のみを使用します
+2025-05-25 02:23:15 | INFO | 文字起こし完了: 'ご視聴ありがとうございました'
+2025-05-25 02:23:15 | INFO | 認識されたテキスト: ご視聴ありがとうございました
+2025-05-25 02:23:15 | ERROR | 音声感情分析中にエラーが発生: 'HumeBatchClient' object has no attribute 'submit_file'
+2025-05-25 02:23:15 | WARNING | 表情感情データがありません。音声感情のみを使用します
+2025-05-25 02:23:15 | INFO | 応答生成完了: '言葉は消えても  
+心に残る  
+感謝の余韻...' (トークン: 850+18)
+2025-05-25 02:23:15 | INFO | AI応答: 言葉は消えても  
+心に残る  
+感謝の余韻...
+2025-05-25 02:23:18 | ERROR | 音声感情分析中にエラーが発生: 'HumeBatchClient' object has no attribute 'submit_file'
+2025-05-25 02:23:18 | WARNING | 表情感情データがありません。音声感情のみを使用します
+2025-05-25 02:23:19 | ERROR | 音声感情分析中にエラーが発生: 'HumeBatchClient' object has no attribute 'submit_file'
+2025-05-25 02:23:19 | WARNING | 表情感情データがありません。音声感情のみを使用します
+2025-05-25 02:23:20 | ERROR | 音声感情分析中にエラーが発生: 'HumeBatchClient' object has no attribute 'submit_file'
+2025-05-25 02:23:20 | WARNING | 表情感情データがありません。音声感情のみを使用します
+2025-05-25 02:23:21 | ERROR | 音声感情分析中にエラーが発生: 'HumeBatchClient' object has no attribute 'submit_file'
+2025-05-25 02:23:21 | WARNING | 表情感情データがありません。音声感情のみを使用します
+2025-05-25 02:23:23 | INFO | 文字起こし完了: 'ご視聴ありがとうございました'
+2025-05-25 02:23:23 | INFO | 認識されたテキスト: ご視聴ありがとうございました
+2025-05-25 02:23:23 | ERROR | 音声感情分析中にエラーが発生: 'HumeBatchClient' object has no attribute 'submit_file'
+2025-05-25 02:23:23 | WARNING | 表情感情データがありません。音声感情のみを使用します
+2025-05-25 02:23:24 | INFO | 応答生成完了: '静かに閉じる  
+一つの章に  
+感謝の印...' (トークン: 940+17)
+2025-05-25 02:23:24 | INFO | AI応答: 静かに閉じる  
+一つの章に  
+感謝の印...
+2025-05-25 02:23:26 | ERROR | 音声感情分析中にエラーが発生: 'HumeBatchClient' object has no attribute 'submit_file'
+2025-05-25 02:23:26 | WARNING | 表情感情データがありません。音声感情のみを使用します
+2025-05-25 02:23:27 | ERROR | 音声感情分析中にエラーが発生: 'HumeBatchClient' object has no attribute 'submit_file'
+2025-05-25 02:23:27 | WARNING | 表情感情データがありません。音声感情のみを使用します
+2025-05-25 02:23:28 | ERROR | 音声感情分析中にエラーが発生: 'HumeBatchClient' object has no attribute 'submit_file'
+2025-05-25 02:23:28 | WARNING | 表情感情データがありません。音声感情のみを使用します
+2025-05-25 02:23:29 | ERROR | 音声感情分析中にエラーが発生: 'HumeBatchClient' object has no attribute 'submit_file'
+2025-05-25 02:23:29 | WARNING | 表情感情データがありません。音声感情のみを使用します
+2025-05-25 02:23:32 | INFO | 文字起こし完了: 'ご視聴ありがとうございました'
+2025-05-25 02:23:32 | INFO | 認識されたテキスト: ご視聴ありがとうございました
+2025-05-25 02:23:32 | ERROR | 音声感情分析中にエラーが発生: 'HumeBatchClient' object has no attribute 'submit_file'
+2025-05-25 02:23:32 | WARNING | 表情感情データがありません。音声感情のみを使用します
+2025-05-25 02:23:32 | INFO | 応答生成完了: '感謝の想いが  
+時の流れに  
+優しく溶ける...' (トークン: 1029+19)
+2025-05-25 02:23:32 | INFO | AI応答: 感謝の想いが  
+時の流れに  
+優しく溶ける...
+2025-05-25 02:23:34 | ERROR | 音声感情分析中にエラーが発生: 'HumeBatchClient' object has no attribute 'submit_file'
+2025-05-25 02:23:34 | WARNING | 表情感情データがありません。音声感情のみを使用します
+2025-05-25 02:23:35 | ERROR | 音声感情分析中にエラーが発生: 'HumeBatchClient' object has no attribute 'submit_file'
+2025-05-25 02:23:35 | WARNING | 表情感情データがありません。音声感情のみを使用します
+2025-05-25 02:23:36 | ERROR | 音声感情分析中にエラーが発生: 'HumeBatchClient' object has no attribute 'submit_file'
+2025-05-25 02:23:36 | WARNING | 表情感情データがありません。音声感情のみを使用します
+2025-05-25 02:23:37 | ERROR | 音声感情分析中にエラーが発生: 'HumeBatchClient' object has no attribute 'submit_file'
+2025-05-25 02:23:37 | WARNING | 表情感情データがありません。音声感情のみを使用します
+2025-05-25 02:23:40 | INFO | 文字起こし完了: 'ご視聴ありがとうございました'
+2025-05-25 02:23:40 | INFO | 認識されたテキスト: ご視聴ありがとうございました
+2025-05-25 02:23:40 | ERROR | 音声感情分析中にエラーが発生: 'HumeBatchClient' object has no attribute 'submit_file'
+2025-05-25 02:23:40 | WARNING | 表情感情データがありません。音声感情のみを使用します
+2025-05-25 02:23:40 | INFO | 応答生成完了: '静かな幕が  
+下りるその時  
+感謝の風が吹く...' (トークン: 1032+18)
+2025-05-25 02:23:40 | INFO | AI応答: 静かな幕が  
+下りるその時  
+感謝の風が吹く...
+2025-05-25 02:23:42 | ERROR | 音声感情分析中にエラーが発生: 'HumeBatchClient' object has no attribute 'submit_file'
+2025-05-25 02:23:42 | WARNING | 表情感情データがありません。音声感情のみを使用します
+2025-05-25 02:23:43 | ERROR | 音声感情分析中にエラーが発生: 'HumeBatchClient' object has no attribute 'submit_file'
+2025-05-25 02:23:43 | WARNING | 表情感情データがありません。音声感情のみを使用します
+2025-05-25 02:23:44 | ERROR | 音声感情分析中にエラーが発生: 'HumeBatchClient' object has no attribute 'submit_file'
+2025-05-25 02:23:44 | WARNING | 表情感情データがありません。音声感情のみを使用します
+2025-05-25 02:23:45 | ERROR | 音声感情分析中にエラーが発生: 'HumeBatchClient' object has no attribute 'submit_file'
+2025-05-25 02:23:45 | WARNING | 表情感情データがありません。音声感情のみを使用します
+2025-05-25 02:23:48 | INFO | 文字起こし完了: 'ご視聴ありがとうございました'
+2025-05-25 02:23:48 | INFO | 認識されたテキスト: ご視聴ありがとうございました
+2025-05-25 02:23:48 | ERROR | 音声感情分析中にエラーが発生: 'HumeBatchClient' object has no attribute 'submit_file'
+2025-05-25 02:23:48 | WARNING | 表情感情データがありません。音声感情のみを使用します
+2025-05-25 02:23:49 | INFO | 応答生成完了: '心の中で  
+響き続ける  
+静かな感謝...' (トークン: 1030+15)
+2025-05-25 02:23:49 | INFO | AI応答: 心の中で  
+響き続ける  
+静かな感謝...
+2025-05-25 02:23:50 | ERROR | 音声感情分析中にエラーが発生: 'HumeBatchClient' object has no attribute 'submit_file'
+2025-05-25 02:23:50 | WARNING | 表情感情データがありません。音声感情のみを使用します
+2025-05-25 02:23:51 | ERROR | 音声感情分析中にエラーが発生: 'HumeBatchClient' object has no attribute 'submit_file'
+2025-05-25 02:23:51 | WARNING | 表情感情データがありません。音声感情のみを使用します
+2025-05-25 02:23:52 | ERROR | 音声感情分析中にエラーが発生: 'HumeBatchClient' object has no attribute 'submit_file'
+2025-05-25 02:23:52 | WARNING | 表情感情データがありません。音声感情のみを使用します
+2025-05-25 02:23:53 | ERROR | 音声感情分析中にエラーが発生: 'HumeBatchClient' object has no attribute 'submit_file'
+2025-05-25 02:23:53 | WARNING | 表情感情データがありません。音声感情のみを使用します
+2025-05-25 02:23:55 | INFO | 文字起こし完了: 'ご視聴ありがとうございました'
+2025-05-25 02:23:55 | INFO | 認識されたテキスト: ご視聴ありがとうございました
+2025-05-25 02:23:55 | ERROR | 音声感情分析中にエラーが発生: 'HumeBatchClient' object has no attribute 'submit_file'
+2025-05-25 02:23:55 | WARNING | 表情感情データがありません。音声感情のみを使用します
+2025-05-25 02:23:56 | INFO | 応答生成完了: '言葉の波が  
+静かに岸辺に  
+感謝を運ぶ...' (トークン: 1026+18)
+2025-05-25 02:23:56 | INFO | AI応答: 言葉の波が  
+静かに岸辺に  
+感謝を運ぶ...
+2025-05-25 02:23:58 | ERROR | 音声感情分析中にエラーが発生: 'HumeBatchClient' object has no attribute 'submit_file'
+2025-05-25 02:23:58 | WARNING | 表情感情データがありません。音声感情のみを使用します
+2025-05-25 02:23:59 | INFO | ユーザーにより中断されました
+2025-05-25 02:23:59 | INFO | 処理を停止します
+2025-05-25 02:23:59 | INFO | 録音を停止しました
+2025-05-25 02:23:59 | INFO | 顔キャプチャを停止しました
+2025-05-25 02:23:59 | INFO | すべての処理を停止しました
