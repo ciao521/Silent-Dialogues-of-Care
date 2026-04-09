@@ -2,6 +2,24 @@
 
 インタラクティブなAI×ヘルスケア×アート展示プロジェクト
 
+---
+
+## 📜 License
+
+### Software (Source Code)
+Licensed under the **[MIT License](LICENSE)**.
+
+### Digital Art & Media
+Licensed under **Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)**.
+
+<p align="left">
+  <a href="http://creativecommons.org/licenses/by-nc-nd/4.0/">
+    <img src="https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by-nc-nd.svg" alt="CC BY-NC-ND" height="40">
+  </a>
+</p>
+
+> **Note to users:** You are free to share and redistribute the digital art files as long as you provide credit, do not use them for commercial purposes, and do not distribute any modified versions of the work.
+
 ## プロジェクト概要
 
 「Silent Dialogues of Care - 境界なき対話」は、来場者の声と表情をAIがリアルタイムで解析し、その感情や言葉を美しいビジュアルと言葉に変換するインタラクティブアート展示です。コの字型の空間全体を包み込むインタラクティブな映像と音響を通じて、来場者に「AIによる寄り添い」という新たなケアの形を体験していただきます。声にならない思いが可視化され、空間と対話し、自己と向き合う静かで深い対話の場を創出します。
